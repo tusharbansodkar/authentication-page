@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <motion.div
-        className="absolute z-10 h-screen w-72 bg-neutral-500/70 flex flex-col items-center px-5  text-center text-white overflow-hidden"
+        className="absolute z-10 h-screen w-72 bg-neutral-500/80 flex flex-col items-center px-5  text-center text-white overflow-hidden"
         initial={false}
         animate={{ right: showSignIn ? 0 : "calc(100% - 18rem)" }}
         transition={{
@@ -22,7 +22,7 @@ const App = () => {
             initial={{
               translateX: showSignIn ? "98%" : "-98%",
             }}
-            animate={{ opacity: 1, scale: 1, translateX: 0 }}
+            animate={{ opacity: 1, translateX: 0 }}
             exit={{
               translateX: showSignIn ? "100%" : "-100%",
             }}
