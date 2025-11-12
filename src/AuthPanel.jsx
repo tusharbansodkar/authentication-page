@@ -11,8 +11,8 @@ const AuthPanel = ({ showSignIn }) => {
         <motion.div
           className="w-80 text-center"
           key={showSignIn ? "signIn" : "signUp"}
-          animate={{ display: "block" }}
-          exit={{ display: "none" }}
+          animate={{ visibility: "visible" }}
+          exit={{ visibility: "hidden" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           {showSignIn ? (
